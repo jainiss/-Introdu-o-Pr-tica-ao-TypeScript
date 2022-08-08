@@ -1,0 +1,30 @@
+"use strict";
+var Profissao;
+(function (Profissao) {
+    Profissao[Profissao["Ator"] = 0] = "Ator";
+    Profissao[Profissao["Engenheiro"] = 1] = "Engenheiro";
+})(Profissao || (Profissao = {}));
+const Humberto = {
+    nome: "Humberto",
+    idade: 24,
+    profissao: Profissao[0]
+};
+const Kiko = {
+    nome: "Kiko",
+    idade: 18,
+    profissao: Profissao[1]
+};
+const Sandra = {
+    nome: "Sandra",
+    idade: 33,
+    profissao: Profissao[0]
+};
+const Junior = {
+    nome: "Junior",
+    idade:35,
+    profissao: Profissao[1]
+};
+console.log(`${Humberto.nome} tem ${Humberto.idade} e trabalha como ${Humberto.profissao}!`);
+console.log(`${Kiko.nome} tem ${Kiko.idade} e trabalha como ${Kiko.profissao}!`);
+console.log(`${Sandra.nome} tem ${Sandra.idade} e trabalha como ${Sandra.profissao}!`);
+console.log(`${Junior.nome} tem ${Junior.idade} e trabalha como ${Junior.profissao}!`);
